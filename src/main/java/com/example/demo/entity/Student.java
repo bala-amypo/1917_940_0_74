@@ -1,5 +1,7 @@
-package com.example.demo.entity
+package com.example.demo.entity;
+
 import jakarta.persistence.*;
+
 @Entity
 public class Student{
     @Id
@@ -10,7 +12,7 @@ public class Student{
     private String email;
     public Student(long int id,String name,String email,LocalDate dob,float cgpa){
         this.id=id;
-        this.naem=name;
+        this.name=name;
         this.email=email;
 
     }
