@@ -19,19 +19,19 @@ public class Student{
     public Long getId(){
         return id;
     }
-    public void setId(Long id){
+    public void setId(){
         this.id=id;
     }
     public String getName(){
         return name;
     }
-    public void setName(String name){
+    public void setName(){
         this.name=name;
     }
     public String getEmail(){
         return email;
     }
-    public void setEmail(String email){
+    public void setEmail(){
         this.email=email;
     }
 }
