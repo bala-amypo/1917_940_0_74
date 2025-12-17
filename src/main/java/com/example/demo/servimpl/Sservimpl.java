@@ -18,7 +18,7 @@ public class Sservimpl implements StudentService{
     StudentRepository strep;
 
     public Student saveStudent(Student st){
-        return strep.save(student);
+        return strep.save(st);
     }
     
 
