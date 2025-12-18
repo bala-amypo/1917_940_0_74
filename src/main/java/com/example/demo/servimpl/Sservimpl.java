@@ -1,4 +1,4 @@
-package com.example.demo.servimpl;
+package com.example.demo.serviceimpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,18 +8,12 @@ import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
 
 @Service
-public class Sservimpl implements StudentService{
-    // private final StudentRepository strep;
-    // public Sservimpl(StudentRepository strep){
-    //     this.strep=strep;
-    // }
-
+public class StudentServiceImple implements StudentService {
     @Autowired
-    StudentRepository strep;
+    StudentRepository studentRepository;
 
-    public Student saveStudent(Student st){
-        return strep.save(st);
+    public Student saveStudent(Student student){
+        return studentRepository.save(student);
     }
     
-
 }
